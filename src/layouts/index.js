@@ -1,7 +1,5 @@
 import React from "react"
 import { rhythm } from "../utils/typography"
-import "typeface-pt-sans"
-import "typeface-oswald"
 
 const MainLayout = ({ children, location }) => (
   <div
