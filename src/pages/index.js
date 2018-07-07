@@ -7,12 +7,14 @@ class IndexComponent extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
+      <div>
         <Img
-          css={{ top: 0, left: 0, right: 0, zIndex: -1 }}
-          style={{ position: `absolute` }}
+          style={{ top: 0, left: 0, right: 0, zIndex: -1 , position: `absolute` }}
           fluid={this.props.data.file.childImageSharp.fluid}
         />
+        </div>
       </Layout>
+
     )
   }
 }

@@ -3,8 +3,7 @@ import { rhythm } from "../utils/typography"
 
 const MainLayout = ({ children, location }) => (
   <div
-    css={{
-      maxWidth: 640,
+    style={{
       margin: `0 auto`,
       padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
     }}
