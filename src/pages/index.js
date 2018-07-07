@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../layouts"
+import Layout from "../components/layout"
 
 class IndexComponent extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class IndexComponent extends React.Component {
       <Layout location={this.props.location}>
       <div>
         <Img
-          style={{ top: 0, left: 0, right: 0, zIndex: -1 , position: `absolute` }}
+          style={{ top: 0, left: 0, right: 0, zIndex: -1 , position: `absolute`, height:"100%" }}
           fluid={this.props.data.file.childImageSharp.fluid}
         />
         </div>
